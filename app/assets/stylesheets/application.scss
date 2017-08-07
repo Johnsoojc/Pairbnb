@@ -63,24 +63,24 @@ body {
 }
 
 .para-one {
-  width: 50%;
+  width: 100%;
   float: left;
 }
 
 .para-two {
-  width: 50%;
+  width: 100%;
   float: left;
 }
 
 @media screen and(min-width: 400px){
   .para-one{
-    width: 100%;
+    width: 50%;
   }
 }
 
 @media screen and(min-width: 400px){
   .para-two{
-    width: 100%;
+    width: 50%;
   }
 }
 
@@ -106,10 +106,13 @@ body {
 
 // media screen within 400px
 // li (4) which means the last list frm the table will be hide
+.menu li:nth-child(4){
+  display: none;
+}
 
 @media screen and(min-width: 400px){
-  .menu li:nth-child(4) {
-    display: none;
+  .menu li:nth-child(4){
+    display: inline;
   }
 }
 
